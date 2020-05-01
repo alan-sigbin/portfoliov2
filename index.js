@@ -6,3 +6,7 @@ window.addEventListener("scroll", function () {
     parallax.style.backgroundPositionY = offset*0.5+"px";
 });
 
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
